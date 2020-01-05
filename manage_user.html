@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>統合サイト</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta property="og:title" content="統合サイト" />
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sample.jp/" />
+  <meta property="og:image" content="https://www.sample.jp/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "101-0001",
+      "streetAddress": "東京都港区西新橋1-15-5 内幸町ケイズビル7F",
+      "addressLocality": "港区",
+      "addressRegion": "東京都"
+    },
+    "name": "aaa",
+    "telephone": "aaa"
+  }
+  </script>
+  
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">メインメニュー</a>
+    <form class="navbar-form navbar-right ml-auto">
+        <input type="text" class="form-control form-control-dark w-100" placeholder="検索">
+    </form>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+  </nav>
+  <!-- ヘッダー部 -->
+
+  <!-- Body -->
+  <div class="container-fluid">
+    <!-- サイドバー -->
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar active">
+        <div class="sidebar-sticky">
+          <!-- <ul class="nav flex-column"> -->
+          <ul class="nav nav-pills nav-stacked">
+          </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="shopping-cart"></span>
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="users"></span>
+                Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Reports
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Integrations
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>管理メニュー</span>
+            <!--
+            <a class="d-flex align-items-center text-muted" href="#">
+              <span data-feather="plus-circle"></span>
+            </a>
+            -->
+          </h6>
+          <ul class="nav flex-column mb-2 components">
+            <li class="nav-item active">
+              <a class="nav-link dropdown-toggle" href="#dropdownUserMenu" data-toggle="collapse" aria-expanded="false">
+                <span data-feather="file-text"></span>
+                ユーザ管理
+              </a>
+              <ul class="collapse" id="dropdownUserMenu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                  ユーザ一覧表示
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                  ユーザの新規作成
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                業務区分管理
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                所属組織管理
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- サイドバー END-->
+      
+      <!-- ユーザ管理 -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h2">ユーザ管理</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary">Share</button>
+              <button class="btn btn-sm btn-outline-secondary">Export</button>
+              <button class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar"></span>
+              This week
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              aaa
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- ユーザ管理 END-->
+    </div>
+  </div>
+  <!-- container-fluid -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+  </script>
+</body>
+</html>
